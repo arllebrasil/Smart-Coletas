@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFF0F0F0"
+    tools:context=".LocalPointsActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            android:backgroundTint="#0FFF"
+            app:tint="@color/green_200"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bem vindo"
+            style="@style/Header1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Encontre no mapa o ponto de coleta \nem sua localidade"
+            style="@style/text"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_margin="12dp"
+        android:background="@color/teal_200"/>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="6dp">
+
+            <CheckBox
+                android:layout_width="86dp"
+                android:layout_height="86dp"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="8dp"
+                android:background="@drawable/item_type"
+                android:button="@color/transparent"
+                android:drawableTop="@drawable/lampadas"
+                android:drawablePadding="4dp"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Lampadas" />
+
+            <CheckBox
+                android:layout_width="86dp"
+                android:layout_height="86dp"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="8dp"
+                android:background="@drawable/item_type"
+                android:button="@color/transparent"
+                android:drawableTop="@drawable/eletronicos"
+                android:drawablePadding="4dp"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Eletrônicos" />
+
+            <CheckBox
+                android:layout_width="86dp"
+                android:layout_height="86dp"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="8dp"
+                android:background="@drawable/item_type"
+                android:button="@color/transparent"
+                android:drawableTop="@drawable/baterias"
+                android:drawablePadding="4dp"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Baterias" />
+
+            <CheckBox
+                android:layout_width="86dp"
+                android:layout_height="86dp"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="8dp"
+                android:background="@drawable/item_type"
+                android:button="@color/transparent"
+                android:drawableTop="@drawable/oleo"
+                android:drawablePadding="4dp"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Óleo" />
+
+            <CheckBox
+                android:layout_width="86dp"
+                android:layout_height="86dp"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="8dp"
+                android:background="@drawable/item_type"
+                android:button="@color/transparent"
+                android:drawableTop="@drawable/organicos"
+                android:drawablePadding="4dp"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Organicos" />
+
+            <CheckBox
+                android:layout_width="86dp"
+                android:layout_height="86dp"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="8dp"
+                android:background="@drawable/item_type"
+                android:button="@color/transparent"
+                android:drawableTop="@drawable/papeis_papelao"
+                android:drawablePadding="4dp"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Papeis" />
+        </LinearLayout>
+    </HorizontalScrollView>
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="128dp"
+    android:orientation="vertical"
+    android:gravity="start|bottom"
+    android:padding="16dp"
+    android:background="@color/primary">
+    <ImageView
+        android:layout_width="86dp"
+        android:layout_height="86dp"
+        android:src="@drawable/ic_baseline_email_24"
+        style=""/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="usuario@email.com"
+        style="@style/Header2"
+        android:textColor="@color/design_default_color_on_primary"/>
+
+
+
+</LinearLayout>
